@@ -28,7 +28,7 @@ app.use(
   })
 );
 
-app.use(express.json()); // Parse JSON request bodies
+app.use(express.json({ limit: "5mb" })); // Parse JSON request bodies
 app.use(cookieParser()); // Parse cookies for auth middleware
 
 app.use("/api/auth", authRoutes); // Mount auth routes

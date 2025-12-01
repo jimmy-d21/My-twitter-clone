@@ -121,7 +121,6 @@ const CreatePost = ({ isLoading, authUser }) => {
             </div>
 
             <button
-              disabled={!createPost.text.trim()}
               onClick={handleCreatePost}
               className="text-white py-2 px-5 text-xs bg-blue-500 rounded-full cursor-pointer transition-all disabled:bg-blue-800 duration-300 hover:bg-blue-700"
             >
